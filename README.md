@@ -1,12 +1,12 @@
 Explanation for Getting and Cleaning Data course project
 --------------------------------------------------------
 
-These are instructions to run R script run_analysis.R
+These are instructions to run R script `run_analysis.R`
 
 **IMPORTANT**
-When extracting the Samsung data zip file: "UCI HAR Dataset.zip"
-it creates a folder named: "UCI HAR Dataset"
-and under this folder there are two more folders: train and test
+When extracting the Samsung data zip file: `UCI HAR Dataset.zip`
+it creates a folder named: `UCI HAR Dataset`
+and under this folder there are two more folders: `train` and `test`
 In these folders there are the files needed to run this script:
 ```
 ./features.txt
@@ -18,8 +18,8 @@ In these folders there are the files needed to run this script:
 ./test/y_test.txt
 ```
 
-Please put this script in "UCI HAR Dataset" folder and set the working
-directory there to run properly: setwd("your_path/UCI HAR Dataset")
+Please put this script in `UCI HAR Dataset` folder and set the working
+directory there to run properly: `setwd("your_path/UCI HAR Dataset")`
 
 Thank you!
 
@@ -42,12 +42,13 @@ dataXtest<-read.csv("./test/X_test.txt",sep="",header=FALSE,stringsAsFactors=FAL
 ```
 
 And we merge both datasets into a new one. This is point 1
+
 **1. Merges the training and the test sets to create one data set.**
 ```
 dataX<-rbind(dataXtrain,dataXtest)
 ```
 
-Read features (column names) from file "features.txt" in actual folder
+Read features (column names) from file `features.txt` in actual folder
 ```
 features<-read.csv("features.txt",sep=" ",header=FALSE,stringsAsFactors=FALSE)
 ```

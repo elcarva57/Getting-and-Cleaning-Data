@@ -6,7 +6,7 @@ The variables are a subset of measurements from the study
 
 From all variables in the study (561) it has been extracted the average and standard deviation values (ended in mean() and std())
 
-The first two columns, subject and activity, has been added to the data set and are the values that the dataset is grouped by.
+The first two columns, subject and activity, has been added to the data set and are the values that the dataset is grouped by, giving 180 rows.
 
 - SUBJECT: The subject id, it is an integer from 1 to 30
 - ACTIVITY: The activity description, it is a char value. Values: WALKING, WALKING_UP, WALKING_DOWN, SITTING, STANDING, LAYING
@@ -15,7 +15,7 @@ The first two columns, subject and activity, has been added to the data set and 
 
 The value of every mean() or std() column is the average of each value grouped by subject and activity
 
-**COLUMN NAMES**
+**COLUMN NAMES (68)**
 ```
 SUBJECT
 ACTIVITY
