@@ -1,4 +1,4 @@
-*** Codebook for Getting and Cleaning Data course project
+### Codebook for Getting and Cleaning Data course project
 ```
 SUBJECT
 ACTIVITY
