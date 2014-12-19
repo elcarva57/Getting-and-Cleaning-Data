@@ -2,7 +2,7 @@ Codebook for Getting and Cleaning Data course project
 -----------------------------------------------------
 ### Variables
 The variables are a subset of measurements from the study 
-[http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones#](Human Activity Recognition Using Smartphones Data Set)
+[Human Activity Recognition Using Smartphones Data Set](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones#)
 
 From all variables in the study (561) it has been extracted the average and standard deviation values (ended in mean() and std())
 
@@ -14,6 +14,8 @@ The first two columns, subject and activity, has been added to the data set and 
 - ...-std()...: Standard deviation values
 
 The value of every mean() or std() column is the average of each value grouped by subject and activity
+
+**COLUMN NAMES**
 ```
 SUBJECT
 ACTIVITY
