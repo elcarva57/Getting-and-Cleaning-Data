@@ -39,7 +39,7 @@ Then we get the test data from folder test
 ```
 dataXtest<-read.csv("./test/X_test.txt",sep="",header=FALSE,stringsAsFactors=FALSE,fill=FALSE)
 ```
-And we merge both datasets into a new one. This is point 1
+And we merge both datasets into a new one. This is point 1  
 **1. Merges the training and the test sets to create one data set.**
 ```
 dataX<-rbind(dataXtrain,dataXtest)
@@ -52,7 +52,7 @@ In features data.table, column 2 is the feature name (column 1 is the code)
 ```
 names(features)[2]<-c("feature")
 ```
-I have added and assigned the column names to the dataset, from this step on. So this is point 4
+I have added and assigned the column names to the dataset, from this step on. So this is point 4  
 **4. Appropriately labels the data set with descriptive variable names.**
 ```
 names(dataX)<-features$feature
@@ -65,7 +65,7 @@ Extracts only columns containing exactly "std()"
 ```
 dstd<-dataX[,grep("std\\(\\)",colnames(dataX))]
 ```
-Overwrites data with the join of mean dataset and standard deviation dataset. This is point 2
+Overwrites data with the join of mean dataset and standard deviation dataset. This is point 2  
 **2. Extracts only the measurements on the mean and standard deviation for each measurement.**
 ```
 dataX<-cbind(dmean,dstd)
@@ -106,7 +106,7 @@ Rename column 1 from subjects data set to "subject"
 ```
 names(dataS)[1]<-c("subject")
 ```
-Create column "activity" with descriptive names. This is point 3
+Create column "activity" with descriptive names. This is point 3  
 **3. Uses descriptive activity names to name the activities in the data set**
 ```
 dataY$activity<-activities[dataY$code]
@@ -117,7 +117,7 @@ data<-cbind(dataS,dataY["activity"],dataX)
 ```
 From data we obtain the average of all variables grouping by subject and activity
 Two first columns (subject and activity) are excluded from data (data[,3:68])
-because they are used to group the rest of variables. This is point 5
+because they are used to group the rest of variables. This is point 5  
 **5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.**
 ```
 tidyData<-aggregate(data[,3:68], by=list(SUBJECT=data$subject, ACTIVITY= data$activity), FUN=mean)

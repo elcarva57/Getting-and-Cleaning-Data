@@ -15,7 +15,7 @@ The first two columns, subject and activity, has been added to the data set and 
 
 The value of every mean() or std() column is the average of each value grouped by subject and activity
 
-**COLUMN NAMES (68)**
+**COLUMN NAMES (68)**  
 ```
 SUBJECT
 ACTIVITY
