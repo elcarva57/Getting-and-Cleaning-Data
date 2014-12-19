@@ -115,7 +115,7 @@ We create `data` dataset adding subjects column, activity column and data
 ```
 data<-cbind(dataS,dataY["activity"],dataX)
 ```
-From data we obtain the average of all variables grouping by subject and activity
+From data we obtain the average of all variables grouping by subject and activity  
 Two first columns (subject and activity) are excluded from data (data[,3:68])
 because they are used to group the rest of variables. This is point 5  
 **5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.**
