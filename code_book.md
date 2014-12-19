@@ -1,4 +1,6 @@
 ### Codebook for Getting and Cleaning Data course project
+Variables
+---------
 ```
 SUBJECT
 ACTIVITY
