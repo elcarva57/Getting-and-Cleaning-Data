@@ -1,3 +1,4 @@
+```
 SUBJECT
 ACTIVITY
 tBodyAcc-mean()-X
@@ -66,3 +67,4 @@ fBodyAccMag-std()
 fBodyBodyAccJerkMag-std()
 fBodyBodyGyroMag-std()
 fBodyBodyGyroJerkMag-std()
+```
